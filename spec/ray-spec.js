@@ -2,7 +2,7 @@
     AJAX
 */
 
-describe("ray JS lib", function() {
+describe("Ray JS lib", function() {
 
     var EVENT_NAMES_IN_TEST = {document: 'DOMContentLoadedTest', window: 'loadTest'};
     var fixture=new Spec.HtmlFixture();
