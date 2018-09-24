@@ -281,6 +281,7 @@ if (!Array.prototype.forEach) {
         this.fixture=new Spec.HtmlFixture();
         this.fixture.create();
         this.ray=new RayNS.Ray(this.EVENT_NAMES_IN_SIM);
+        this.bus=this.ray.eventBus;
     }
 
     RaySim.prototype._createEvent=function(name) {
@@ -311,6 +312,8 @@ if (!Array.prototype.forEach) {
         this.ray.end();
         this.fixture.destroy();
     };
+
+
 
     exports.RaySimNS.RaySim=RaySim;
 })(window);
